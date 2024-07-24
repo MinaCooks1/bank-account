@@ -1,0 +1,282 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap'); */
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  /* font-family: 'Croissant One', cursive; */
+  height: 100vh;
+  padding: 2rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.welcome {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+}
+
+.login-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.login-input {
+  border: none;
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  text-align: center;
+  width: 8rem;
+  border-radius: 9999px;
+  border: 2px solid #f3f3f3;
+  transition: all 0.3s;
+}
+
+.login-input:focus {
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+.login-btn {
+  font-size: 1.2rem;
+  padding: 0.5rem 2rem;
+  border-radius: 9999px;
+  border: 2px solid #f3f3f3;
+  background-color: #f3f3f3;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  border: 2px solid #ccc;
+  background-color: #ccc;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 70rem;
+  margin: 4rem auto;
+}
+
+.balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.balance-label {
+  font-size: 1.5rem;
+}
+
+.balance-date {
+  color: gray;
+}
+
+.balance-value {
+  font-size: 3rem;
+}
+
+.movements-operations {
+  display: flex;
+  gap: 2rem;
+}
+
+.movements {
+  width: 60%;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  overflow: auto;
+  max-height: 390px;
+}
+
+.movement {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.movement-info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.movement-type {
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.type-deposit {
+  background-color: lightgreen;
+}
+
+.type-withdrawal {
+  background-color: red;
+  color: white;
+}
+
+.operations-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 40%;
+}
+
+.operation {
+  border-radius: 1rem;
+  padding: 1.5rem;
+  color: #333;
+  height: 100%;
+}
+
+.operation-transfer {
+  background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+}
+
+.operation-loan {
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+
+.operation-close {
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+
+h3 {
+  margin-bottom: 1rem;
+}
+
+.form-transfer {
+  display: grid;
+  grid-template-columns: 2.5fr 2.5fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 0.5rem 1rem
+}
+
+.form-loan {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 0.5rem 1rem
+}
+
+.form-input {
+  width: 100%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-family: inherit;
+  font-size: 1rem;
+  text-align: center;
+  color: #333;
+  padding: 0.3rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+}
+
+.form-input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.form-btn {
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.form-btn:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.form-label {
+  text-align: center;
+  font-size: smaller;
+}
+
+/* SUMMARY */
+
+.summary-container {
+  display: flex;
+  gap: 2rem;
+  align-items: baseline;
+}
+
+.summary {
+  width: 60%;
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.summary-label {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.summary-value {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.summary-value-in,
+.summary-value-interest {
+  color: lightgreen;
+}
+
+.summary-value-out {
+  color: #f5465d;
+}
+
+.btn-sort {
+  margin-left: auto;
+  border: none;
+  background: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.logout-timer {
+  width: 40%;
+  text-align: right;
+  font-size: 14px;
+}
+
+.timer {
+  font-weight: 600;
+}
+.hidden {
+  display:none
+}
+
+.btn-logout{
+  display: inline-flex;
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+  padding: 4px;
+  border-radius: 4px;
+  color: #eee;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

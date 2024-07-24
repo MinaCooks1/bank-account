@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="https://image.similarpng.com/very-thumbnail/2021/06/Geek-Owl-Logo-Template-on-transparent-background-PNG.png" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <title>Transferrer</title>
+</head>
+<body>
+  <nav>
+    <h1 class="welcome">Log in to get started</h1>
+    <img 
+      src="https://image.similarpng.com/very-thumbnail/2021/06/Geek-Owl-Logo-Template-on-transparent-background-PNG.png"
+      alt="Logo"
+      class="logo"
+    />
+    <form class="login-form">
+      <input type="text" class="login-input" id="username" placeholder="user">
+      <input type="text" class="login-input" id="pin" placeholder="PIN">
+      <button class="login-btn">&rarr;</button>
+    </form>
+  </nav>
+  <main id="main" class="hidden">
+    <div class="balance">
+      <div>
+        <h2 class="balance-label">Current Balance</h2>
+        <p class="balance-date">as of 29/09/2023</p>
+      </div>
+      <p class="balance-value">3840€</p>
+    </div>
+    <div class="movements-operations">
+      <div class="movements"></div>
+      <div class="operations-container">
+        <div class="operation operation-transfer">
+          <h3>Transfer money</h3>
+          <form class="form-transfer">
+            <input type="text" class="form-input form-input-to">
+            <input type="text" class="form-input form-input-amount">
+            <button class="form-btn form-btn-transfer">&rarr;</button>
+            <label class="form-label">Transfer to</label>
+            <label class="form-label">Amount</label>
+          </form>
+        </div>
+        <div class="operation operation-loan">
+          <h3>Request loan</h3>
+          <form class="form-loan">
+            <input type="number" class="form-input loan-amount">
+            <button class="form-btn form-btn-loan">&rarr;</button>
+            <label class="form-label">Amount</label>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button class="btn-logout">Log Out</button>
+    </div>
+    
+    <div class="summary-container">
+      <div class="summary">
+        <p class="summary-label">In</p>
+        <p class="summary-value summary-value-in">0000€</p>
+        <p class="summary-label">Out</p>
+        <p class="summary-value summary-value-out">0000€</p>
+        <p class="summary-label">Interest</p>
+        <p class="summary-value summary-value-interest">0000€</p>
+        <button class="btn-sort">&downarrow; SORT</button>
+      </div>
+      <div class="logout-timer">
+        You will be logged out in <span class="timer">05:00</span>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
